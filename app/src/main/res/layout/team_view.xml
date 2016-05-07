@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        android:text="Team A" />
+
+    <TextView
+        android:id="@+id/a_point_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="0"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="24dp"
+        android:textColor="#000000"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/a_point_3_inc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="threeIncrementerA"
+        android:text="+3 Points" />
+
+    <Button
+        android:id="@+id/a_point_2_inc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="twoIncrementerA"
+        android:text="+2 Points" />
+
+    <Button
+        android:id="@+id/a_free_throw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="freeThrowA"
+        android:text="Free Throw" />
+
+</LinearLayout>
